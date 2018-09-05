@@ -1,0 +1,373 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  line-height: 1.6em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  margin-top: 28px;
+  margin-bottom: 0;
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h3 {
+  margin: 60px 0;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+h4{
+  color: black;
+
+
+}
+
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #689b99;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+hr {
+   border-width: 1.2px;
+  border-color: black;
+  margin-top: 20px;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+nav ul {
+  list-style-type: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: 800;
+}
+
+nav li a {
+  display: block;
+  color: #3a3a3a;
+  margin-top: 30px;
+}
+
+nav li a:hover {
+  color: #689b99;
+}
+
+
+
+/* ---- Main Header ---- */
+
+.top-image {
+  width: 300px;
+  margin: 35px 0;
+}
+
+
+/* ---- Main---- */
+
+
+.main-header,
+.contact {
+  background-color: #9376bc;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-images {
+width: 100%;
+}
+
+.thumb h2 {
+  margin-top: 30px;
+}
+
+
+.contact-number {
+font-weight: 800;
+}
+
+.contact-detail {
+  margin:0 0;
+  padding-bottom: 0;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 0;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact p {
+  padding: 0;
+}
+
+.footer-name {
+  margin: 0;
+  float: left;
+  font-size: 1em;
+}
+
+.footer-top {
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 1em;
+  float: right;
+}
+
+.footer-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 20px;
+}
+
+.footer-nav ul li a {
+  color: black;
+}
+
+.footer-nav ul li a:hover {
+  color: #689b99;
+}
+
+.icon {
+  width: 50px;
+}
+
+.psicon {
+  width: 55px;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.skills {
+  padding-bottom: 30px;
+  padding-top: 2px;
+  background-color: #efeaea;
+  text-align: center;
+}
+
+.footer {
+  margin: 30px 0;
+}
+
+
+
+/* ---- tablet screen 768 wide ---- */
+
+@media (min-width: 768px) {
+
+
+
+  .thumb {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+  }
+
+  .top-image {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .introduction-text {
+    text-align: left;
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  nav {
+    margin: 35px 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    background-color: inherit;
+
+  }
+
+  nav li a {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .footer-top {
+    display: none;
+  }
+
+}
+
+
+
+/* ---- computer screen 1024px wide ---- */
+@media (min-width: 1024px) {
+
+  .thumb {
+    width: 33%;
+    float: left;
+    padding-right: 22px;
+  }
+
+  .name-wide {
+    float: left;
+    margin: 0;
+    font-size: 4em;
+  }
+
+  .title {
+    margin-top: 50px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .introduction-text {
+    font-size: 1.6em;
+    margin-top: 30px;
+  }
+
+
+  nav {
+    margin: 0;
+    float: right;
+  }
+
+  nav ul {
+    margin-top: 5px;
+  }
+
+
+
+  .name {
+    display: none;
+  }
+}
+
+
+
+/* ---- Mobile phone 320 wide ---- */
+
+@media (max-width: 767px) {
+
+ nav ul li {
+    margin-top: 12px;
+    background-color: grey;
+    padding: 5px;
+    text-align: center;
+    
+ line-height: 25px;
+  }
+
+  p{
+     font-size: 90%;
+
+  }
+
+
+  .top-image{
+    height: 95%;
+    width: 95%;
+  }
+
+  .contact-info{
+    align-items: center;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1023px) {
+
+  .name-wide {
+    display: none;
+  }
+}
+
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
